@@ -1,16 +1,23 @@
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   background-color: #ffffff;
 }
 footer {
   background: #2f303a;
 }
+:root {
+  --brand-color: #2196f3;
+  --accent-color: black;
+  --text-color: color: #757575;
+  --letter-color: #FFFFFF;
+}
 .list {
   list-style: none;
 }
 .link {
-  text-decoration: none;
+  text-decoration: none;  
 }
+
 /*-------------------HEADER-------------------*/
 .logo {
   font-family: Raleway, sans-serif;
@@ -18,25 +25,26 @@ footer {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--brand-color);
 }
 .logo-dark {
-  color: black;
+  color: var(--accent-color);
 }
 .logo-light {
   color: white;
 }
-.nav-link {
+.link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--accent-color);
 }
 .link:hover,
 .link:focus {
-  color: #2196f3;
+  color: var(--brand-color);
 }
+
 /*----------HERO------------*/
 .hero {
   background-color: #2f303a;
@@ -49,20 +57,21 @@ footer {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color:var(--letter-color);
 }
 .hero-button {
-  background-color: #2196f3;
+  background-color: var(--brand-color);
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color:var(--letter-color);
+  cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:active {
-  background: #2196f3;
+  background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -73,7 +82,7 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--accent-color);
 }
 .features-item-text {
   font-weight: normal;
@@ -81,15 +90,15 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: none;
-  color: #757575;
+  color:var(--text-color);
 }
 /*-----------WORKS-----------*/
-.header-features {
+.title-features {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--accent-color);
 }
 /*---------TEAM------------*/
 .team-item {
@@ -97,14 +106,14 @@ footer {
   font-size: 16px;
   line-height: 1.26;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--accent-color);
 }
 .team-text {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 /*----------ADDRESS-----------*/
 .address-map {
@@ -112,7 +121,7 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color:var(--letter-color)
 }
 
 .address-mail {
@@ -133,10 +142,12 @@ footer {
 /*------------FILTERS--------------*/
 
 .list-button {
-  background: #2196f3;
+  background: #f5f4fa;
+  color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  cursor: pointer;
 }
 .list-button:hover,
 .list-button:active {
@@ -144,19 +155,20 @@ footer {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color:var(--letter-color);
+  background: var(--brand-color);
 }
 .gallery-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--accent-color);
 }
 .gallery-text {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color:var(--text-color);
 }
