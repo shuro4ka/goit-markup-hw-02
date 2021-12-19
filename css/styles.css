@@ -10,6 +10,7 @@ footer {
   --accent-color: black;
   --text-color: color: #757575;
   --letter-color: #FFFFFF;
+  --background-color: #F5F4FA
 }
 .list {
   list-style: none;
@@ -31,18 +32,33 @@ footer {
   color: var(--accent-color);
 }
 .logo-light {
-  color: white;
+  color:var(--letter-color);
 }
-.link {
+.nav{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-.link:hover,
-.link:focus {
+.nav:hover,
+.nav:focus {
   color: var(--brand-color);
+}
+.nav .link.current {
+  color: var(--brand-color);
+}
+
+/*-----------CONTACTS-----------*/
+
+
+.link.contacts{
+  color:var(--text-color);
+}
+.link.contacts:hover,
+.link.contacts:focus {
+  color: var(--brand-color);
+  
 }
 
 /*----------HERO------------*/
@@ -60,6 +76,7 @@ footer {
   color:var(--letter-color);
 }
 .hero-button {
+
   background-color: var(--brand-color);
   font-family: Roboto;
   font-weight: 700;
@@ -76,6 +93,16 @@ footer {
   border-radius: 4px;
 }
 /*----------FEATURES------------*/
+.ghost{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
 .features-item {
   font-weight: 700;
   font-size: 14px;
@@ -101,6 +128,9 @@ footer {
   color: var(--accent-color);
 }
 /*---------TEAM------------*/
+.team-section{
+  background-color: var(--background-color);
+}
 .team-item {
   font-weight: 500;
   font-size: 16px;
@@ -116,32 +146,39 @@ footer {
   color: var(--text-color);
 }
 /*----------ADDRESS-----------*/
-.address-map {
+.address{
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.map {  
   color:var(--letter-color)
 }
-
-.address-mail {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.map:hover,
+.map:focus{
+  color: var(--brand-color);
+}
+.mail { 
   color: rgba(255, 255, 255, 0.6);
 }
-
-.address-tel {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.mail:hover,
+.mail:focus{
+  color: var(--brand-color);
+}
+.tel { 
   color: rgba(255, 255, 255, 0.6);
 }
+.tel:hover,
+.tel:focus{
+  color: var(--brand-color);
+}
+
 /*------------FILTERS--------------*/
 
-.list-button {
+.btn-item {
+  font-family: inherit;
   background: #f5f4fa;
   color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -149,8 +186,9 @@ footer {
   border-radius: 4px;
   cursor: pointer;
 }
-.list-button:hover,
-.list-button:active {
+.btn-item:hover,
+.btn-item:active {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
