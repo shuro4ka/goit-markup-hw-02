@@ -1,22 +1,28 @@
 :root {
   --brand-color: #2196f3;
   --accent-color: black;
-  --text-color: color: #757575;
-  --letter-color: #FFFFFF;
-  --background-color: #F5F4FA
+  --text-color: #757575;
+  --letter-color: #ffffff;
+  --background-color: #f5f4fa;
+  --footer-color: #2f303a;
 }
 body {
   font-family: Roboto, sans-serif;
   background-color: #ffffff;
 }
-h1, h2, h3, h4, h5, h6{
-  margin:0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
-ul{
+ul {
   margin: 0;
   padding: 0;
 }
-button{
+button {
   cursor: pointer;
 }
 
@@ -24,7 +30,7 @@ button{
   list-style: none;
 }
 .link {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 /*-------------------HEADER-------------------*/
@@ -40,9 +46,9 @@ button{
   color: var(--accent-color);
 }
 .logo-light {
-  color:var(--letter-color);
+  color: var(--letter-color);
 }
-.nav-item{
+.nav-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -59,20 +65,21 @@ button{
 
 /*-----------CONTACTS-----------*/
 
-.
-.contacts-mail:hover,
-.contacts-mail:focus{
-  color: var(--brand-color);
+.contacts-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
 }
-.contacts-tel:hover,
-.contacts-tel:focus{
+.contacts-item:hover,
+.contacts-item:focus {
   color: var(--brand-color);
 }
 
 /*----------HERO------------*/
 .hero {
   background-color: #2f303a;
-  width: 1600px;
 }
 .hero-title {
   font-weight: 900;
@@ -81,18 +88,16 @@ button{
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color:var(--letter-color);
+  color: var(--letter-color);
 }
 .hero-button {
-
   background-color: var(--brand-color);
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color:var(--letter-color);
-  
+  color: var(--letter-color);
 }
 .hero-button:hover,
 .hero-button:active {
@@ -101,17 +106,17 @@ button{
   border-radius: 4px;
 }
 /*----------FEATURES------------*/
-.ghost{
+.ghost {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  margin: 1px;
   padding: 0;
   overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0)
+  clip: rect(0 0 0 0);
 }
-.features-item {
+.features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -119,24 +124,24 @@ button{
   text-transform: uppercase;
   color: var(--accent-color);
 }
-.features-item-text {
-  font-weight: normal;
+.features-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: none;
-  color:var(--text-color);
+  color: var(--text-color);
 }
-/*-----------WORKS-----------*/
-.features {
+/*---------WORKS------------*/
+.works-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 42px;
+  text-align: center;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: #212121;
 }
 /*---------TEAM------------*/
-.team-section{
+.team-section {
   background-color: var(--background-color);
 }
 .team-item {
@@ -154,54 +159,58 @@ button{
   color: var(--text-color);
 }
 /*----------ADDRESS-----------*/
-.address{
+
+.footer {
+  background-color: var(--footer-color);
+}
+.address {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.map {  
-  color:var(--letter-color)
+.address-map {
+  color: var(--letter-color);
 }
-.map:hover,
-.map:focus{
+.address-map:hover,
+.address-map:focus {
   color: var(--brand-color);
 }
-.mail { 
+.address-mail {
   color: rgba(255, 255, 255, 0.6);
 }
-.mail:hover,
-.mail:focus{
+.address-mail:hover,
+.address-mail:focus {
   color: var(--brand-color);
 }
-.tel { 
+.address-tel {
   color: rgba(255, 255, 255, 0.6);
 }
-.tel:hover,
-.tel:focus{
+.address-tel:hover,
+.address-tel:focus {
   color: var(--brand-color);
 }
 
 /*------------FILTERS--------------*/
 
 .btn-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
   font-family: inherit;
   background: #f5f4fa;
   color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  
 }
 .btn-item:hover,
 .btn-item:active {
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
   letter-spacing: 0.03em;
-  color:var(--letter-color);
+  color: var(--letter-color);
   background: var(--brand-color);
 }
 .gallery-title {
@@ -212,9 +221,8 @@ button{
   color: var(--accent-color);
 }
 .gallery-text {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color:var(--text-color);
+  color: var(--text-color);
 }
