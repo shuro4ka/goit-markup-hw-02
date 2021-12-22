@@ -9,7 +9,6 @@ body {
   font-family: Roboto, sans-serif;
   background-color: #ffffff;
 }
-
 .list {
   list-style: none;
 }
@@ -50,11 +49,11 @@ body {
 /*-----------CONTACTS-----------*/
 
 
-.link.contacts{
+.contacts{
   color:var(--text-color);
 }
-.link.contacts:hover,
-.link.contacts:focus {
+.contacts:hover,
+.contacts:focus {
   color: var(--brand-color);
   
 }
@@ -118,7 +117,7 @@ body {
   color:var(--text-color);
 }
 /*-----------WORKS-----------*/
-.title-features {
+.features-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
