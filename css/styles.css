@@ -18,10 +18,14 @@ h5,
 h6 {
   margin: 0;
 }
+p {
+  margin: 0;
+}
 ul {
   margin: 0;
   padding: 0;
 }
+
 button {
   cursor: pointer;
 }
@@ -136,13 +140,26 @@ button {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 /*---------TEAM------------*/
 .team-section {
   background-color: var(--background-color);
+}
+.section-main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 .team-item {
   font-weight: 500;
